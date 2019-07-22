@@ -5,14 +5,14 @@
 echo "1. Folder creator"
 echo "2. Folder deleter"
 echo "Any. Exit"
-read -p "Enter desired option: " choice
+read -p "Enter desired option: " option
 
-if(($choice == "1"))
+if(($option == "1"))
 then
 	option="mkdir"
 	optionAction="created"
 	init=$(($(find . -maxdepth 1 -type d | wc -l)-1))
-elif(($choice == "2"))
+elif(($option == "2"))
 then
 	option="rm -rf"
 	optionAction="deleted"
